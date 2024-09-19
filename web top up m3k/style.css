@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menu .login-btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Header Banner */
+.header-banner {
+    position: relative;
+    text-align: center;
+}
+
+.header-banner img {
+    width: 60%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.phases {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    right: 10%;
+}
+
+.phase {
+    background-color: #8d0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.event-date {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+/* Best Seller Section */
+.best-seller {
+    text-align: center;
+    padding: 40px 0; /* Adjusted padding to reduce vertical space around the section */
+}
+
+.best-seller h2 {
+    margin-bottom: 60px; /* Reduce space between the heading and the game list */
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the new layout */
+    grid-gap: 60px; /* Add space between the images */
+    margin: auto;
+    max-width: 830px; /* Adjusted for more width */
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+}
+
+.game img {
+    width: 200%;
+    height: auto;
+    max-width: 200px; /* Adjust the size of the images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .game-list {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablet screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .game-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 60px;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 100px; 
+    padding-right: 1400px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    position: fixed; /* Make the header fixed */
+    width: 100%; /* Ensure the header spans the entire width */
+    top: 0; /* Stick the header to the top */
+    z-index: 1000; /* Make sure it's on top of other elements */
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding-top: 80px; /* Add top padding to prevent content from being hidden under the fixed header */
+}
+
+.menu .login-btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+}
+
